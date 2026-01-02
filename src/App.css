@@ -1,0 +1,7 @@
+/* App-specific styles are now in index.css */
+/* This file is kept for any component-specific overrides */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
