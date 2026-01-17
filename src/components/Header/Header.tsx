@@ -26,7 +26,8 @@ export const Header = () => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top >= 0 && rect.top <= 300;
+          // Adjusted detection range for better accuracy
+          return rect.top <= 100 && rect.bottom >= 100;
         }
         return false;
       });
@@ -45,14 +46,22 @@ export const Header = () => {
     { id: "planos", label: "Planos" },
   ];
 
+  // Identifies sections with LIGHT backgrounds where Header should be DARK
+  const lightSections = ["acompanhamento", "planos"];
+  const isDarkTheme = lightSections.includes(activeSection);
+
   return (
-    <header className={`revolutionary-header ${scrolled ? "scrolled" : ""}`}>
+    <header
+      className={`revolutionary-header ${scrolled ? "scrolled" : ""} ${
+        isDarkTheme ? "dark-theme" : ""
+      }`}
+    >
       <div className="header-glass-container">
         {/* Logo Area */}
         <div className="header-brand">
           <a href="#top" className="logo-link">
             <img
-              src={scrolled ? logo : logoWhite}
+              src={scrolled && !isDarkTheme ? logo : logoWhite}
               alt="RaNutri"
               className="header-logo"
               width={120}

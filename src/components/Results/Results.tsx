@@ -155,8 +155,8 @@ export const Results = () => {
           <div className="cta-card">
             <div className="cta-glow"></div>
             <div className="cta-content">
-              <h3>Pronto para transformar sua vida?</h3>
-              <p>Dê o primeiro passo hoje</p>
+              <h3>Dê o próximo passo na sua evolução.</h3>
+              <p>Sua melhor versão começa agora.</p>
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"

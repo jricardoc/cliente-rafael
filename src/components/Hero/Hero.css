@@ -38,10 +38,8 @@
 .hero-mesh {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
@@ -272,7 +270,7 @@
 
 /* Social Proof */
 .hero-social-proof {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
@@ -309,7 +307,6 @@
 
 .proof-text {
   display: flex;
-  flex-direction: column;
   gap: 0.2rem;
   font-size: 0.85rem;
   color: var(--gray-400);
@@ -541,5 +538,18 @@
   }
   .btn-hero-secondary:hover svg {
     transform: translateX(5px);
+  }
+}
+
+/* Custom Font Sizes for Hero Title */
+@media (min-width: 1050px) {
+  .hero-title {
+    font-size: 3.4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 3.9rem;
   }
 }

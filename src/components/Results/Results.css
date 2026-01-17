@@ -125,7 +125,6 @@
 .results-subtitle {
   font-size: 1.1rem;
   color: var(--gray-400);
-  max-width: 500px;
   margin: 0 auto;
 }
 

@@ -1,5 +1,5 @@
 import bannerImage from "../../assets/img-banner.webp";
-import { WhatsAppIcon, ArrowRightIcon, CheckIcon } from "../Icons";
+import { WhatsAppIcon, CheckIcon } from "../Icons";
 import { WHATSAPP_LINK } from "../../constants";
 import "./Hero.css";
 
@@ -65,10 +65,6 @@ export const Hero = () => {
                 <WhatsAppIcon />
                 <span>Iniciar Consultoria</span>
                 <div className="btn-glow"></div>
-              </a>
-              <a href="#planos" className="btn-hero-secondary">
-                <span>Ver Planos</span>
-                <ArrowRightIcon />
               </a>
             </div>
 
